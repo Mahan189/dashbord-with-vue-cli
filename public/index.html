@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="" dir="rtl" data-bs-theme="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../dashbord/img/logo.webp">
+    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico ">  -->
+    
+    <title><%= htmlWebpackPlugin.options.title %></title>
+        
+    <link rel="stylesheet" href="../dashbord/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../dashbord/css/custom.css">
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <div class="dropdown position-fixed end-0 bottom-0 me-3 mb-3">
+      <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#mood">تغییر مود</button>
+      <ul class="dropdown-menu " id="mood">
+          <li class="text-center">
+              <button class="dropdown-item " id="light-mood">light <span>☀️</span></button>
+          </li>
+          <li class="text-center">
+              <button class="dropdown-item" id="dark-mood">dark <span>🌙</span></button>
+          </li>
+      </ul>
+  </div>
+  <script>
+        let lightMoodBtn = document.getElementById('light-mood')
+        let darkMoodBtn = document.getElementById('dark-mood')
+
+        console.log('lightMoodBtn')
+        console.log('darkMoodBtn')
+
+
+        darkMoodBtn.addEventListener('click',function(){
+            console.log('click')
+            document.documentElement.setAttribute('data-bs-theme','dark')
+            darkMoodBtn.classList.add('active')
+            lightMoodBtn.classList.remove('active')
+            localStorage.setItem('thememood',('dark'))
+        })
+        lightMoodBtn.addEventListener('click',function(){
+            console.log('click')
+            document.documentElement.setAttribute('data-bs-theme','light')
+            lightMoodBtn.classList.add('active')
+            darkMoodBtn.classList.remove('active')
+            localStorage.setItem('thememood',('light'))
+        })
+
+        let sevethememood = localStorage.getItem('thememood')
+        if(sevethememood=='dark'){
+            document.documentElement.setAttribute('data-bs-theme','dark')
+            darkMoodBtn.classList.add('active')
+            lightMoodBtn.classList.remove('active')
+        }
+        else{
+            document.documentElement.setAttribute('data-bs-theme','light')
+            lightMoodBtn.classList.add('active')
+            darkMoodBtn.classList.remove('active')
+        }
+    </script>
+    <!-- built files will be auto injected -->
+     
+  </body>
+</html>

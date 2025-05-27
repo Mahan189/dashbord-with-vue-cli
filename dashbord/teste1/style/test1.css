@@ -1,0 +1,134 @@
+@font-face {
+    font-family: shabnam;
+    src: url(../fonts/Shabnam-FD.woff2) format(woff2);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: shabnam , dana;
+    background-color: #f1f0f0;
+  
+}
+
+.container{
+    width: 1216px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px;
+   
+}
+.section_head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.section_title{
+    display: flex;
+    text-align: center;
+    gap: 6px;
+
+}
+.section_title_icon{
+    width: 22px;
+    height: 22px;
+    color: #039BE5;
+}
+.section_link{
+color: #039BE5;
+text-decoration: none;
+}
+
+.row{
+    display: flex;
+    gap: 24px;
+
+}
+.product{
+    width: 100%;
+    box-shadow: -6px 9px 9px 2px rgba(0, 0, 0, 0.08);    
+    padding: 24px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 33px;
+
+}
+.product_image{
+    width: 100%;
+
+}
+.product_name{
+    color: #212121;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 14px;
+    line-height: 1.6;
+    height: 68px;
+}
+.product_link{
+    text-decoration: none;
+    color: inherit;
+
+}
+.product_offer{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    margin-top: 12px;
+
+}
+.product_offer_percent{
+    background-color: #E3F2FD;
+    color:#1976D2 ;
+    font-weight: bold;
+    padding: 2px 4px;
+    display: inline-block;
+    border-radius: 4px;
+
+    
+}
+.product_offer_price{  
+    text-decoration: line-through;
+    color: #455A64;
+
+}
+.product_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+
+}
+.product_price{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+.product_price_number{
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.product_price-unit{
+    font-size: 14px;
+
+}
+.product_rating{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+.product_rating_number{
+    font-size: 14px;
+    color: #455A64;
+
+}
+.product_rating_icon{
+    width: 18px;
+    height: 18px;
+    color: #f1c21b;
+
+}
