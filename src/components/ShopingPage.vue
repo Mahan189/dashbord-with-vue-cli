@@ -116,6 +116,7 @@
                         <a class="product_link" href="#">کابل لایتنینگ هوشمند بیسوس Baseus C-shaped Lightning Cable
                             1m</a>
                     </h4>
+                    
                     <div class="product_offer">
                         <span class="product_offer_percent">14%</span>
                         <span class="product_offer_price">320,000</span>
