@@ -1,18 +1,18 @@
 <template>
-  <LayoutPage>
+  <!-- <LayoutPage> -->
     <router-view />
-  </LayoutPage>
+  <!-- </LayoutPage> -->
 
 </template>
 
 <script>
-import LayoutPage from './layouts/LayoutPage.vue'
+// import LayoutPage from './layouts/LayoutPage.vue'
 
 
 export default {
   name: 'App',
   components: {
-    LayoutPage,
+    // LayoutPage,
 
   },
 }
