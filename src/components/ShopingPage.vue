@@ -109,7 +109,6 @@
                         </div>
 
                     </div>
-
                 </div>
                 <div class="product">
                     <img class="product_image" src="../assets/image/images/img4.jpg" alt="product1">
